@@ -1,0 +1,23 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- checkout: self
+
+- task: NodeTool@0
+  inputs:
+    versionSpec: '22.x'
+  displayName: 'Install Node.js'
+
+- script: npm test
+  displayName: 'Run unit tests'
+
+- script: echo "Azure Pipeline for Car Sales Management is running!"
+  displayName: 'Run sample script'
+
+- publish: src
+  artifact: car-sales-management
+  displayName: 'Publish application artifact'
