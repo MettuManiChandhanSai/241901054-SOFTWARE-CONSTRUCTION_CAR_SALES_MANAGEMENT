@@ -1,0 +1,14 @@
+{
+  "name": "car-sales-management",
+  "version": "1.0.0",
+  "description": "Car Sales Management - vehicles, customers and services (CS23432 Software Construction)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
