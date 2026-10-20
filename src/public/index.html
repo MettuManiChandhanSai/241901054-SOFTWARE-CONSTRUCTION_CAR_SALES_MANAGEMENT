@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Car Sales Management</title>
+<style>
+body{margin:0;font-family:system-ui,Segoe UI,sans-serif;background:#f4f6fa;color:#1c2333}
+header{background:#1f4e8c;color:#fff;padding:40px 24px}
+h1{margin:0 0 6px;font-size:32px}header p{margin:0;opacity:.85}
+.badge{display:inline-block;margin-top:16px;background:#e8f1ff;color:#1f4e8c;padding:6px 12px;border-radius:20px;font-size:14px;font-weight:600}
+main{max-width:960px;margin:0 auto;padding:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.card{background:#fff;border-radius:10px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.card h3{margin:0 0 8px;color:#1f4e8c}.card ul{margin:0;padding-left:18px;line-height:1.7}
+h2{margin:32px 0 12px;font-size:20px}footer{text-align:center;color:#667;padding:24px;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<h1>Car Sales Management</h1>
+<p>A digital system for managing vehicles, customers and services</p>
+<span class="badge">Live on Azure App Service &middot; Application in development (Sprints 1&ndash;4)</span>
+</header>
+<main>
+<h2>Who uses it</h2>
+<div class="grid">
+<div class="card"><h3>Customer</h3><ul><li>Register and log in</li><li>Search cars</li><li>Book a test drive</li><li>Pay online</li></ul></div>
+<div class="card"><h3>Sales Manager</h3><ul><li>Manage cars</li><li>Manage customers</li><li>View sales reports</li></ul></div>
+<div class="card"><h3>Service Manager</h3><ul><li>Schedule services</li><li>Update service records</li><li>View vehicle history</li></ul></div>
+<div class="card"><h3>Admin</h3><ul><li>Manage users</li><li>Manage inventory</li><li>View reports</li></ul></div>
+</div>
+<h2>Running on Azure</h2>
+<div class="grid">
+<div class="card"><h3>App Service</h3>Linux web app, Central India</div>
+<div class="card"><h3>Azure SQL Database</h3>Serverless, Microsoft Entra sign-in only</div>
+<div class="card"><h3>Azure DevOps</h3>Boards backlog: 5 epics, 28 user stories, 4 sprints</div>
+</div>
+</main>
+<footer>Car Sales Management &middot; CS23432 Software Construction</footer>
+</body>
+</html>
